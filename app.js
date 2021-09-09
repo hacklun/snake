@@ -13,9 +13,14 @@ const createBoard = () => {
 }
 
 const drawSnake = () => {
-    cells.forEach((cell, index) => {
-
+    snake.forEach(cell => {
+        cells[cell].classList.add('snake');
     });
 }
 
+const update = () => {
+
+}
+
 createBoard();
+drawSnake();
